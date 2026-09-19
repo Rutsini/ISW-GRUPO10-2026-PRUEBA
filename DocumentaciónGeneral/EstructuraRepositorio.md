@@ -10,7 +10,7 @@ ISW4K3-Grupo10-2026/
 ├── ReglasDeJuego/
 ├── Resumenes/
 ├── TrabajosPracticos/
-│   └── TP<n> - <NombreTP>/
+│   └── TP<x> - <NombreTP>/
 └── Teorico/
     ├── Bibliografia/
     │   └── <Tematica>/
