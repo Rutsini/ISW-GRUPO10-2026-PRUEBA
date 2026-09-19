@@ -16,16 +16,6 @@ Estas siglas identifican las clases de IC definidas en [`PlanDeConfiguracion.md`
 | TP | Trabajo Práctico |
 | R | Resumen |
 
-## Identificadores de temáticas de bibliografía
-
-| Identificador | Significado |
-| ------------- | ----------- |
-| ISW | Ingeniería de Software |
-| PA | Pensamiento Ágil |
-| SCM | Gestión de Configuración de Software |
-| TS | Testing de Software |
-| LeanKanban | Lean y Kanban |
-
 ## Términos generales
 
 | Término | Significado |
