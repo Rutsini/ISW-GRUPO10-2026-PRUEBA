@@ -10,17 +10,17 @@ Se considera **Ítem de Configuración (IC)** a todo elemento del repositorio qu
 
 Los tipos clasifican los IC según su finalidad. No representan carpetas ni son, por sí mismos, archivos concretos. La siguiente tabla define qué elementos se controlan y cómo deberán incorporarse al repositorio:
 
-| Sigla | Tipo de IC | Qué archivos abarca | Ubicación |
-| --- | --- | --- | --- |
-| DOC | Documentación del Repositorio | README, Plan de Configuración, Glosario y documentación sobre la estructura del repositorio. | `/` o `/DocumentacionGeneral` |
-| CFG | Configuración Técnica | Archivos que configuran Git o el comportamiento técnico del repositorio. | `/` |
-| RDJ | Reglas de Juego | Programa, presentación de la materia, material de apoyo y demás pautas provistas por la cátedra. | `/ReglasDeJuego` |
-| MB | Material Bibliográfico | Libros, artículos y otros documentos bibliográficos clasificados por temática. | `/Teorico/Bibliografia/<Tematica>` |
-| PC | Presentación de Clase | Presentaciones utilizadas o provistas durante las clases teóricas. | `/Teorico/Presentaciones` |
-| TP | Trabajo Práctico | Enunciados, informes, código, anexos y documentación auxiliar de cada TP, incluidos `README.md` y `links.md`. | `/TrabajosPracticos/TP<x> - <NombreTP>` |
-| R | Resumen | Resúmenes elaborados por el grupo sobre unidades o temas de la materia. | `/Resumenes` |
+| Sigla | Tipo de IC | Qué archivos abarca | Regla de nombrado | Ubicación |
+| --- | --- | --- | --- | --- |
+| DOC | Documentación del Repositorio | README, Plan de Configuración, Glosario y documentación sobre la estructura del repositorio. | Nombre descriptivo o convencional. | `/` o `/DocumentacionGeneral` |
+| CFG | Configuración Técnica | Archivos que configuran Git o el comportamiento técnico del repositorio. | Nombre técnico convencional. | `/` |
+| RDJ | Reglas de Juego | Programa, presentación de la materia, material de apoyo y demás pautas provistas por la cátedra. | `RDJ_<NombreDocumento>.<ext>` | `/ReglasDeJuego` |
+| MB | Material Bibliográfico | Libros, artículos y otros documentos bibliográficos clasificados por temática. | `MB_<NombreMaterial>_<Autor>.<ext>` | `/Teorico/Bibliografia/<Tematica>` |
+| PC | Presentación de Clase | Presentaciones utilizadas o provistas durante las clases teóricas. | `PC_<n>_<NombrePresentacion>.<ext>` | `/Teorico/Presentaciones` |
+| TP | Trabajo Práctico | Enunciados, informes, código, anexos y documentación auxiliar de cada TP, incluidos `README.md` y `links.md`. | `TP<x>_<NombreTP>_<Tipo>.<ext>`; los nombres convencionales se conservan para `README.md` y `links.md`. | `/TrabajosPracticos/TP<x> - <NombreTP>` |
+| R | Resumen | Resúmenes elaborados por el grupo sobre unidades o temas de la materia. | `R_<Tema>.<ext>` | `/Resumenes` |
 
-Esta tabla define categorías y criterios reutilizables; no es un inventario de los archivos existentes. Por eso no necesita actualizarse cada vez que se incorpora un nuevo IC. Solo se modifica si se agrega un nuevo tipo de IC o cambia alguno de los criterios. Los marcadores `.gitkeep` preservan carpetas vacías en Git y no se consideran IC.
+Esta tabla define categorías y reglas reutilizables; no es un inventario de los archivos existentes. Por eso no necesita actualizarse cada vez que se incorpora un nuevo IC. Solo se modifica si se agrega un nuevo tipo de IC o cambia alguna regla. Los marcadores `.gitkeep` preservan carpetas vacías en Git y no se consideran IC.
 
 ---
 
