@@ -141,7 +141,7 @@ La ubicación forma parte de la identificación del IC. Cada archivo debe almace
 | Trabajo Práctico | `TP<x>_<NombreTP>_<Tipo>.<ext>`, `README.md` o `links.md` | `/TrabajosPracticos/TP<x> - <NombreTP>` |
 | Resumen | `R_<Tema>.<ext>` | `/Resumenes` |
 
-Las temáticas inicialmente previstas para la bibliografía son: `ISW`, `PA`, `SCM`, `TS` y `LeanKanban`. Si durante el cursado surge otra temática, se incorpora una nueva subcarpeta siguiendo el mismo criterio y se documenta en el glosario.
+Cada temática de bibliografía se incorpora en una subcarpeta propia, aplicando el patrón genérico `<Tematica>` definido en la estructura del repositorio.
 
 La estructura completa se documenta en [`EstructuraRepositorio.md`](EstructuraRepositorio.md).
 
