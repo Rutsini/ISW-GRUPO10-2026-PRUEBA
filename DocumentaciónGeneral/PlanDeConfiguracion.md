@@ -8,7 +8,6 @@ Este documento establece los criterios utilizados para identificar, nombrar, ubi
 
 Se considera **Ítem de Configuración (IC)** a todo elemento del repositorio que debe ser identificado, almacenado y controlado durante el cursado.
 
-De acuerdo con la clasificación utilizada por la cátedra, los IC pueden corresponder al **Producto**, al **Proyecto** o a una **Iteración**. En este repositorio, cada Trabajo Práctico se considera una iteración de trabajo: su enunciado y su documentación organizativa pertenecen a la Iteración, mientras que los resultados elaborados por el grupo pertenecen al Producto. Los documentos y materiales que sirven de soporte durante todo el cursado pertenecen al Proyecto.
 
 | Sigla | Ítem de Configuración | Tipo | Ubicación |
 | --- | --- | --- | --- |
