@@ -26,7 +26,7 @@ El árbol representa únicamente carpetas. Los archivos que se incorporen se ide
 | `DocumentacionGeneral/` | Documentación que define cómo se organiza y administra el repositorio: estructura, glosario y plan de configuración. |
 | `ReglasDeJuego/` | Material provisto por la cátedra que establece las pautas de cursado: programa, presentación de la materia y material de apoyo. |
 | `Resumenes/` | Resúmenes elaborados por el grupo para las distintas unidades o temas de la materia. |
-| `TrabajosPracticos/` | Trabajos Prácticos. Cada TP se almacena en una carpeta propia junto con su README, sus enlaces, el enunciado y los entregables asociados. |
+| `TrabajosPracticos/` | Trabajos Prácticos. Cada TP se almacena en una carpeta propia junto con su `README.md`, el enunciado, los entregables asociados y, cuando corresponda, un archivo `links.md`. |
 | `Teorico/Bibliografia/` | Material bibliográfico clasificado por temática. |
 | `Teorico/Presentaciones/` | Presentaciones utilizadas durante las clases teóricas. |
 

@@ -10,17 +10,17 @@ Se considera **Ítem de Configuración (IC)** a todo elemento del repositorio qu
 
 Los tipos clasifican los IC según su finalidad. No representan carpetas ni son, por sí mismos, archivos concretos. La siguiente tabla define qué elementos se controlan y cómo deberán incorporarse al repositorio:
 
-| Sigla | Tipo de IC | Qué archivos abarca | Regla de nombrado | Ubicación |
-| --- | --- | --- | --- | --- |
-| DOC | Documentación del Repositorio | README, Plan de Configuración, Glosario y documentación sobre la estructura del repositorio. | Nombre descriptivo o convencional. | `/` o `/DocumentacionGeneral` |
-| CFG | Configuración Técnica | Archivos que configuran Git o el comportamiento técnico del repositorio. | Nombre técnico convencional. | `/` |
-| RDJ | Reglas de Juego | Programa, presentación de la materia, material de apoyo y demás pautas provistas por la cátedra. | `RDJ_<NombreDocumento>.<ext>` | `/ReglasDeJuego` |
-| MB | Material Bibliográfico | Libros, artículos y otros documentos bibliográficos clasificados por temática. | `MB_<NombreMaterial>_<Autor>.<ext>` | `/Teorico/Bibliografia/<Tematica>` |
-| PC | Presentación de Clase | Presentaciones utilizadas o provistas durante las clases teóricas. | `PC_<n>_<NombrePresentacion>.<ext>` | `/Teorico/Presentaciones` |
-| TP | Trabajo Práctico | Enunciados, informes, código, anexos y documentación auxiliar de cada TP, incluidos `README.md` y `links.md`. | `TP<x>_<NombreTP>_<Tipo>.<ext>`; los nombres convencionales se conservan para `README.md` y `links.md`. | `/TrabajosPracticos/TP<x> - <NombreTP>` |
-| R | Resumen | Resúmenes elaborados por el grupo sobre unidades o temas de la materia. | `R_<Tema>.<ext>` | `/Resumenes` |
+| Sigla | Tipo de IC | Qué archivos abarca | Ubicación |
+| --- | --- | --- | --- |
+| DOC | Documentación del Repositorio | README, Plan de Configuración, Glosario y documentación sobre la estructura del repositorio. | `/` o `/DocumentacionGeneral` |
+| CFG | Configuración Técnica | Archivos que configuran Git o el comportamiento técnico del repositorio. | `/` |
+| RDJ | Reglas de Juego | Programa, presentación de la materia, material de apoyo y demás pautas provistas por la cátedra. | `/ReglasDeJuego` |
+| MB | Material Bibliográfico | Libros, artículos y otros documentos bibliográficos clasificados por temática. | `/Teorico/Bibliografia/<Tematica>` |
+| PC | Presentación de Clase | Presentaciones utilizadas o provistas durante las clases teóricas. | `/Teorico/Presentaciones` |
+| TP | Trabajo Práctico | Enunciados, informes, código, anexos y documentación auxiliar de cada TP, incluidos `README.md` y `links.md`. | `/TrabajosPracticos/TP<x> - <NombreTP>` |
+| R | Resumen | Resúmenes elaborados por el grupo sobre unidades o temas de la materia. | `/Resumenes` |
 
-Esta tabla define categorías y reglas reutilizables; no es un inventario de los archivos existentes. Por eso no necesita actualizarse cada vez que se incorpora un nuevo IC. Solo se modifica si se agrega un nuevo tipo de IC o cambia alguna regla. Los marcadores `.gitkeep` preservan carpetas vacías en Git y no se consideran IC.
+Esta tabla define categorías y criterios reutilizables; no es un inventario de los archivos existentes. Por eso no necesita actualizarse cada vez que se incorpora un nuevo IC. Solo se modifica si se agrega un nuevo tipo de IC o cambia alguno de los criterios. Los marcadores `.gitkeep` preservan carpetas vacías en Git y no se consideran IC.
 
 ---
 
@@ -112,11 +112,13 @@ El objetivo de la regla es que el nombre permita identificar el tipo y el conten
 
 Los archivos DOC y CFG conservan sus nombres descriptivos o técnicos (`README.md`, `EstructuraRepositorio.md`, `.gitignore`, etc.) porque son nombres convencionales y su ubicación permite identificarlos de manera unívoca.
 
-### Archivos auxiliares de los Trabajos Prácticos
+### Documentación propia de los Trabajos Prácticos
 
-Cuando un Trabajo Práctico requiera referencias externas, puede incluir un archivo `links.md`. Este archivo contiene la URL, una breve descripción del recurso y, cuando corresponda, su relación con el TP. Su finalidad es conservar en el repositorio las referencias necesarias para acceder a recursos que no se almacenan como archivos.
+Cada carpeta de Trabajo Práctico contiene un archivo `README.md`. Su finalidad es identificar y describir el TP, detallar el contenido de la carpeta e indicar el estado de la entrega o cualquier instrucción necesaria para utilizar sus archivos.
 
-El archivo `links.md` se considera un IC de tipo TP, se ubica dentro de la carpeta del Trabajo Práctico correspondiente y solo se crea cuando existen enlaces que registrar.
+Cuando un Trabajo Práctico requiera referencias externas, también puede incluir un archivo `links.md`. Este archivo contiene la URL, una breve descripción del recurso y, cuando corresponda, su relación con el TP. Su finalidad es conservar las referencias necesarias para acceder a recursos que no se almacenan como archivos dentro del repositorio.
+
+Tanto `README.md` como `links.md` se consideran IC de tipo TP y se ubican dentro de la carpeta del Trabajo Práctico correspondiente. `README.md` se incluye en todos los TP; `links.md` solo se crea cuando existen enlaces externos que registrar. Los archivos `links.md` existentes se conservan mientras contengan referencias útiles.
 
 ---
 
